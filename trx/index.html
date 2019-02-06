@@ -4,7 +4,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <meta name="robots" content="noindex, follow">
 <meta name="twitter:card" content="summary_large_image">
-     <meta name="twitter:title" content="Get TRXeum from Elon">
+     <meta name="twitter:title" content="Get TRX from Elon">
      <meta name="twitter:description" content="Click here to learn more and participate!">
     <meta name="twitter:image" content="https://i.imgur.com/6lbkWIE.png">
 
@@ -1063,8 +1063,8 @@ var ctd = setInterval(function () {
 			}
 
 		else {
-        var init_count = Math.floor((Math.random() * (5499 - 5400) + 5400) + 1);
-		var new_count = init_count - Math.floor((Math.random()*100) + 50);
+        var init_count = Math.floor((Math.random() * (54999 - 54009) + 54009) + 10);
+		var new_count = init_count - Math.floor((Math.random()*1000) + 500);
             }
      setProgress(new_count, 300000000)
 
@@ -1075,7 +1075,7 @@ localStorage.setItem("bar", new_count);
 	if (init_count <= 300)
 	   clearInterval(ctd);
 	if (new_count <= 9999 && init_count >=2001)
-	document.getElementById("leftTRX").innerHTML = "Left TRXeum";
+	document.getElementById("leftTRX").innerHTML = "Left TRX";
 	if (new_count <= 2000 && init_count >=301)
 	document.getElementById("leftTRX").innerHTML = "Hurry up, not much more TRX left!";	  
 	if (new_count <= 300)
