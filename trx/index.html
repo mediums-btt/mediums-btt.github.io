@@ -904,15 +904,15 @@ localStorage.setItem("bar", new_count);
 	
 	if (init_count <= 300)
 	   clearInterval(ctd);
-	if (new_count <= 9999 && init_count >=2001)
-	document.getElementById("leftTRX").innerHTML = "Left TRXeum";
-	if (new_count <= 2000 && init_count >=301)
+	if (new_count <= 99999 && init_count >=2001)
+	document.getElementById("leftTRX").innerHTML = "Left TRX";
+	if (new_count <= 20000 && init_count >=301)
 	document.getElementById("leftTRX").innerHTML = "Hurry up, not much more TRX left!";	  
-	if (new_count <= 300)
+	if (new_count <= 30000)
 	document.getElementById("leftTRX").innerHTML = "Last chance to get your TRX!";
 	if (new_count <= 300000000)
 	document.title = new_count + " TRX left";
-	if (new_count <= 2000)
+	if (new_count <= 200000)
 	document.title = "Get your " + new_count + " TRX now!";
 	
 	}, 6666);
